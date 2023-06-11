@@ -6,11 +6,11 @@ namespace net_restfull_api.Controllers
 {
     [ApiController]
     [Route("api/[controller]")]
-    public class HerosController : ControllerBase
+    public class HeroesController : ControllerBase
     {
         private readonly IHeroService _herosService;
 
-        public HerosController(IHeroService herosService)
+        public HeroesController(IHeroService herosService)
         {
             _herosService = herosService;
         }

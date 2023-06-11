@@ -39,10 +39,10 @@ namespace net_restfull_api.Services
             var heroToUpdate = await _context.Heroes.FindAsync(id);
             if (heroToUpdate is null) return null;
 
-            heroToUpdate.Name = hero.Name;
-            heroToUpdate.FirstName = hero.FirstName;
-            heroToUpdate.LastName = hero.LastName;
-            heroToUpdate.Place = hero.Place;
+            if (heroToUpdate.Name != hero.Name) heroToUpdate.Name = hero.Name;
+            if (heroToUpdate.FirstName != hero.FirstName) heroToUpdate.FirstName = hero.FirstName;
+            if (heroToUpdate.LastName != hero.LastName) heroToUpdate.LastName = hero.LastName;
+            if (heroToUpdate.Place != hero.Place) heroToUpdate.Place = hero.Place;
 
             await _context.SaveChangesAsync();
 
