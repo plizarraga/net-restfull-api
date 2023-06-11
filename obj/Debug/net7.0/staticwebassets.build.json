@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "VoHLnqV9T3ezECNEJqp6bUJmRY+oJ7kgdQgEZJKSkMk=",
+  "Source": "net-restfull-api",
+  "BasePath": "_content/net-restfull-api",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}
